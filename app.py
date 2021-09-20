@@ -115,6 +115,6 @@ def find_library(inp):
 #         print("with",list_cnt[0][0],"matches.")
     return list_cnt
     
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.debug = True
+    app.run()
