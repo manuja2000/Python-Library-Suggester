@@ -1,0 +1,164 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	margin: 0;
+	background-color: #ffffff;
+}
+
+/* Website Title */
+.container{
+	color: #000000;
+    padding: 5px;
+	display: block;
+	text-align: center;
+}
+
+.container-heading{
+    margin: 0;
+}
+
+.heading{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.button{
+    text-align: center;
+} 
+
+/* Generate Button */
+.myButton {
+/* 	background-color:#0c0c0c; */
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+    margin-right:30px;
+	text-decoration:none;
+	transition: 0.5s ease-out;
+}
+
+.myButton:hover{
+	background-color: #E9E9E9;
+	color: #000000;
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Footer */
+.footer{
+	background-color: #E9E9E9;
+	color: #000000;
+	padding: 12px;
+    text-align: center;
+}
+
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #a6a19a;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+	font-weight: 100;
+}
+
+/* Result */
+.results{
+  display: inline-block;
+  width: auto;
+  height: 429px;
+  line-height: 400px;
+  text-align: center;
+}
+
+
+#thatform{
+    width: 100%;
+    max-width: 100em;
+    margin: 0 auto;
+    color: #3f3a27;
+    background: #f4f0e5;
+    padding: 1.0em;
+}
+
+#thisform{
+    width: 35%;
+    max-width: 100em;
+    margin-left:3.2em;
+    padding: 1.0em;
+}
+
+label, input, select {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -box-sizing: border-box;
+    margin-bottom: 0.8em;
+    text-align: left;
+}
+
+label {
+    width: 30%;
+    text-align: left;
+    margin: 0 10% 0 0;
+    padding:5px 15px;  
+}
+
+label:after {
+    content: ': ';
+}
+
+input[type=text] {
+    width: 500px;
+    height: 30px;
+}
+
+select {
+    width: 500px;
+    height: 30px;
+/*     background: yellow; */
+}
+
+fieldset {
+    margin: 0 0 1em 0;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
+
+.rep{
+    width: 60%;
+    text-align: left;
+    margin: 0 10% 0 0;
+    padding:5px 50px;  
+}
+
+
+
+
+
+

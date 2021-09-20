@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Python Library Suggestion</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/tiet.jpg') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body style="background-color:#FFFFFF;">      
+
+     <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <div class="navbar-header"></div>
+    <ul class="nav navbar-nav">
+<!--       <li><img src="static/images/tiet.jpg" width="75" height="50" alt=""></li> -->
+      <li class="active"><a href="{{ 'https://www.psrana.com/ucs757' }}">UCS 757- Building Innovative Systems</a></li>
+      <li><a href="{{ url_for('home') }}">Back</a></li>
+    </ul>
+  </div>
+</nav>
+        
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading">Report Generated</span></h2>
+    			<h4>Project report and library suggestion.</h4>
+        </div>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+        
+<div class="rep">
+<h5 class='container-heading'><span class="heading">Library Suggestion: {{lis[0]}}.<br><br> Matching Fields: {{lis[1]}}.</span></h5>
+<br><br>
+<label class="required" for="firstName">First name:</label>
+<input id="fullName" type="text" name="firstName" placeholder={{fname}} disabled>
+<label class="required" for="lastName">Last name:</label>
+<input id="lastName" type="text" name="lastName" placeholder={{lname}} disabled>
+<!-- INSERTFIELD -->
+<br><br>  
+</div>
+<br><br>
+</body>
+</html>

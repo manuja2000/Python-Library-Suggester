@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Python Library Suggestion</title>
+<link href="{{ url_for('static', filename='images/tiet.jpg') }}" rel="shortcut icon"/>
+<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body style="background-color:#C0C0C0;">
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+</div>
+<ul class="nav navbar-nav">
+<li><img alt="" height="50" src="static/images/tiet.jpg" width="75"/></li>
+<li class="active"><a href="{{ 'https://www.psrana.com/ucs757' }}">UCS 757- Building Innovative Systems</a></li>
+</ul>
+</div>
+</nav>
+<!-- Website Title -->
+<div class="container">
+<h2 class="container-heading"><span class="heading">Python Library Suggestion for your project...</span></h2>
+<h4>UCS 757- Building Innovative Systems</h4>
+</div>
+<div id="thatform">
+<form action="{{ url_for('generate') }}" method="POST">
+<fieldset>
+<label class="required" for="fullName">First name:</label>
+<input id="firstName" type="text" name="firstName"  required>
+    
+<label class="required" for="lastName">Last name:</label>
+<input id="lastName" type="text" name="lastName">
+    
+</fieldset>
+<!-- INSERTFIELD -->
+<fieldset>
+<label for="select0">Description</label>
+<select id="select0" name="select0">
+<option value="none">--- Select---</option>
+<option value="To deliver information effectively through creative visuals">To deliver information effectively through creative visuals</option>
+<option value="Data manipulation and analysis">Data manipulation and analysis</option>
+<option value="Understanding the visual world">Understanding the visual world</option>
+<option value="Extracting the data, processing it and then save it">Extracting the data, processing it and then save it</option>
+<option value="To pull the data out of HTML and XML files">To pull the data out of HTML and XML files</option>
+<option value="Developing and evaluating deep learning models">Developing and evaluating deep learning models</option>
+<option value="Robust and easy-to-use implementations">Robust and easy-to-use implementations</option>
+<option value="Build and deploy ML powered applications">Build and deploy ML powered applications</option>
+<option value="Build up web-applications">Build up web-applications</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select1">Domain</label>
+<select id="select1" name="select1">
+<option value="none">--- Select---</option>
+<option value="Data Science, Machine Learning">Data Science, Machine Learning</option>
+<option value="Data Analytics">Data Analytics</option>
+<option value="Data Visualization">Data Visualization</option>
+<option value="Computer Vision">Computer Vision</option>
+<option value="Data Mining">Data Mining</option>
+<option value="Deep Learning">Deep Learning</option>
+<option value="Computer Vision, Natural Language Processing">Computer Vision, Natural Language Processing</option>
+<option value="Web and internet development">Web and internet development</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select2">Purpose</label>
+<select id="select2" name="select2">
+<option value="none">--- Select---</option>
+<option value="Data Processing and modeling">Data Processing and modeling</option>
+<option value="Statisitical Plotting">Statisitical Plotting</option>
+<option value="Image Classification Model">Image Classification Model</option>
+<option value="Web scraping and gathering data">Web scraping and gathering data</option>
+<option value="Web crawling and data scraping">Web crawling and data scraping</option>
+<option value="Web Framework">Web Framework</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select3">Industry use</label>
+<select id="select3" name="select3">
+<option value="none">--- Select---</option>
+<option value="Identifying Trends and Spikes">Identifying Trends and Spikes</option>
+<option value="Other">Other</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select4">Complexities</label>
+<select id="select4" name="select4">
+<option value="none">--- Select---</option>
+<option value="Data gathering">Data gathering</option>
+<option value="Other">Other</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select5">Input data</label>
+<select id="select5" name="select5">
+<option value="none">--- Select---</option>
+<option value="Time Series">Time Series</option>
+<option value="Other">Other</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select6">Output</label>
+<select id="select6" name="select6">
+<option value="none">--- Select---</option>
+<option value="Knowing the interest for services relevant to the business">Knowing the interest for services relevant to the business</option>
+<option value="Other">Other</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select7">Examples of industry usecase</label>
+<select id="select7" name="select7">
+<option value="none">--- Select---</option>
+<option value="Customer  service">Customer  service</option>
+<option value="Other">Other</option>
+</select><br/>
+</fieldset>
+<fieldset>
+<label for="select8">How to instigate</label>
+<select id="select8" name="select8">
+<option value="none">--- Select---</option>
+<option value="Understanding the data set">Understanding the data set</option>
+<option value="Other">Other</option>
+</select><br/>
+</fieldset>
+<!-- <input class="form-input" type="text" name="select7" placeholder="--Some Numeric Value--"><br> -->
+<div class="button"><input class="myButton" type="submit" value="Generate Model Report"/></div>
+</form>
+    </div>
+</body>
+</html>

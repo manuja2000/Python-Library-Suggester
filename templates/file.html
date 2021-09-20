@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Python Library Suggestion</title>
+<link href="{{ url_for('static', filename='images/tiet.jpg') }}" rel="shortcut icon"/>
+<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body style="background-color:#C0C0C0;">
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+</div>
+<ul class="nav navbar-nav">
+<li><img alt="" height="50" src="static/images/tiet.jpg" width="75"/></li>
+<li class="active"><a href="{{ 'https://www.psrana.com/ucs757' }}">UCS 757- Building Innovative Systems</a></li>
+</ul>
+</div>
+</nav>
+<!-- Website Title -->
+<div class="container">
+<h2 class="container-heading"><span class="heading">Python Library Suggestion for your project...</span></h2>
+<h4>UCS 757- Building Innovative Systems</h4>
+</div>
+<div id="thatform">
+<form action="{{ url_for('generate') }}" method="POST">
+<fieldset>
+<label class="required" for="fullName">First name:</label>
+<input id="firstName" type="text" name="firstName"  required>
+    
+<label class="required" for="lastName">Last name:</label>
+<input id="lastName" type="text" name="lastName">
+    
+</fieldset>
+<!-- INSERTFIELD -->
+<!-- <input class="form-input" type="text" name="select7" placeholder="--Some Numeric Value--"><br> -->
+<div class="button"><input class="myButton" type="submit" value="Generate Model Report"/></div>
+</form>
+    </div>
+</body>
+</html>
