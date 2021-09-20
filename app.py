@@ -22,21 +22,21 @@ def dropdown(i):
             s=s+"<option value=\""+df.iloc[i][j]+"\">"+df.iloc[i][j]+"</option>\n"
     s=s+"</select><br/>\n</fieldset>\n"
     contents.insert(loc,s)
-    with open("templates/index.html", 'w', encoding="mbcs") as f:
+    with open("templates/index.html", 'w') as f:
         f.writelines(contents)
         
 def refresh():
-    with open("templates/file.html", 'r', encoding="mbcs") as f:
-        open("templates/index.html", "w", encoding="mbcs").close()
+    with open("templates/file.html", 'r') as f:
+        open("templates/index.html", "w").close()
         contents = f.readlines()
-        with open("templates/index.html", 'w', encoding="mbcs") as f:
+        with open("templates/index.html", 'w') as f:
             f.writelines(contents)
 
 def refresh2():
-    with open("templates/test.html", 'r', encoding="mbcs") as f:
-        open("templates/rep_index.html", "w", encoding="mbcs").close()
+    with open("templates/test.html", 'r') as f:
+        open("templates/rep_index.html", "w").close()
         contents = f.readlines()
-        with open("templates/rep_index.html", 'w', encoding="mbcs") as f:
+        with open("templates/rep_index.html", 'w') as f:
             f.writelines(contents)
             
 def take_input():  
@@ -55,7 +55,7 @@ def report(inpp):
     refresh2()
     loc= 0
     filename="templates/rep_index.html"
-    with open(filename, 'r', encoding="mbcs") as f:
+    with open(filename, 'r') as f:
         contents = f.readlines()
         for index, line in enumerate(contents):
             if line.startswith('<!-- INSERTFIELD -->'):
@@ -67,7 +67,7 @@ def report(inpp):
         s=s+"<option value=\"none\">"+str(inp[df["Field_Names"][i]])+"</option>\n"
         s=s+"</select><br/>\n</fieldset>\n"
         contents.insert(loc,s)
-    with open("templates/rep_index.html", 'w', encoding="mbcs") as f:
+    with open("templates/rep_index.html", 'w') as f:
         f.writelines(contents)
         
 def report2(lis):
